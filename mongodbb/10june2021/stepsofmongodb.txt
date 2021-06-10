@@ -1,0 +1,34 @@
+copy the path of bin
+>cd paste the path
+>mongod
+mongo server should be running
+keep this window 
+and open new command prompt
+
+//windows->data->db
+new command prompt
+>cd paste the bin path
+>mongo
+REPL -Read Evaluate print loop
+Interactive mode
+
+> db
+test
+> use restaurant
+switched to db restaurant
+> bd
+uncaught exception: ReferenceError: bd is not defined :
+@(shell):1:1
+> db
+restaurant
+> db.dishes.insert({name:"Modak",description:"Indian Famouus dish"})
+WriteResult({ "nInserted" : 1 })
+> db.dishes.find()
+{ "_id" : ObjectId("60c1afe7ebedd43cdc24f81e"), "name" : "Modak", "description" : "Indian Famouus dish" }
+> db.dishes.find().pretty(
+... )
+{
+        "_id" : ObjectId("60c1afe7ebedd43cdc24f81e"),
+        "name" : "Modak",
+        "description" : "Indian Famouus dish"
+}

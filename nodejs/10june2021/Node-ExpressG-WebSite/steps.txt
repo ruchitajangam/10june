@@ -1,0 +1,10 @@
+create folder
+craete server.js
+npm cache --clean if gets error in installation
+
+1.install express-generator:npx express-genrator
+2.npm install
+3.routes->dishRouter.js
+4.add changes in app.js
+
+
